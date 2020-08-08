@@ -16,9 +16,10 @@ const workoutSchema = new Schema({
             distance: {type:Number, default:0}
             }
         ],
-    totalDuration: {type:Number, default:0}
+        totalDuration: {type: Number, default: 0}
+    },
+);
 
-});
 
 const Workout = mongoose.model('Workout', workoutSchema);
 module.exports = Workout;
